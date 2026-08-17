@@ -8,6 +8,10 @@
     {
       "name": "Input",
       "ioValue": "__GEOMETRY_INPUT__"
+    },
+    {
+      "name": "Input_1",
+      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -64,6 +68,72 @@
           "currentEquation": "2"
         }
       ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.24615384615384617,
+      "uniqueID": "id-21",
+      "name": "Input_1"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.1253846153846154,
+      "y": 0.24615384615384617,
+      "uniqueID": "id-24",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 10,
+          "currentEquation": "10"
+        },
+        {
+          "name": "y length",
+          "ioValue": 20,
+          "currentEquation": "20"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.21968365553602814,
+      "y": 0.4010152284263959,
+      "uniqueID": "id-28",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 2,
+          "currentEquation": "2"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.3196836555360282,
+      "y": 0.4010152284263959,
+      "uniqueID": "id-42",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 10
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -76,6 +146,16 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-17",
       "ap2ID": "id-10"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-24",
+      "ap2ID": "id-28"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-28",
+      "ap2ID": "id-42"
     }
   ],
   "unitsKey": "MM",
